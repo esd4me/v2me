@@ -32614,7 +32614,7 @@ async function check(target, controller){
 
     try{
 
-        await fetch(target.startsWith("http") ? target : `https://${target}`, {
+        await fetch(target.startsWith("http") ? target : `http://${target}`, {
             mode:"no-cors",
             signal:controller.signal
         });
